@@ -64,3 +64,35 @@ function hideSearch() {
   searchDelayEls.reverse();
   searchInputEl.value = "";
 }
+
+// 요소의 가시성 관찰
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add("show");
+  });
+});
+const infoEls = document.querySelectorAll(".info");
+infoEls.forEach((el) => {
+  io.observe(el);
+});
+
+// 비디오 재생!
+const video = document.querySelector(".stage video");
+const playBtn = document.querySelector(".stage .controller--play");
+const pauseBtn = document.querySelector(".stage .controller--pause");
+
+playBtn.addEventListener("click", () => {
+  console.log("재생");
+  video.play();
+  playBtn.classList.add("hide");
+  pauseBtn.classList.remove("hide");
+});
+pauseBtn.addEventListener("click", () => {
+  console.log("멈춰");
+  video.pause();
+  playBtn.classList.remove("hide");
+  pauseBtn.classList.add("hide");
+});
