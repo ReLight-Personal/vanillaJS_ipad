@@ -1,4 +1,5 @@
-import ipads from '../data/ipads.js';
+import ipads from "../data/ipads.js";
+import navigations from "../data/navigations.js";
 
 // 장바구니 - Basket
 const basketStartEl = document.querySelector("header .basket-starter");
@@ -100,14 +101,14 @@ pauseBtn.addEventListener("click", () => {
 });
 
 // '당신에게 맞는 iPad는?' 렌더링!
-const itemsEl = document.querySelector('section.compare .items');
+const itemsEl = document.querySelector("section.compare .items");
 ipads.forEach((ipad) => {
-  const itemEl = document.createElement('div');
-  itemEl.classList.add('item');
+  const itemEl = document.createElement("div");
+  itemEl.classList.add("item");
 
-  let colorList = '';
+  let colorList = "";
   ipad.colors.forEach((color) => {
-    colorList += /*html*/`<li style='background-color: ${color};'></li>`
+    colorList += /*html*/ `<li style='background-color: ${color};'></li>`;
   });
 
   itemEl.innerHTML = /* html */ `
@@ -117,10 +118,39 @@ ipads.forEach((ipad) => {
     <ul class='colors'>${colorList}</ul>
     <h3 class="name">${ipad.name}</h3>
     <p class='tagline'>${ipad.tagline}</p>
-    <p class='price'>￦${ipad.price.toLocaleString('en-US')}</p>
+    <p class='price'>￦${ipad.price.toLocaleString("en-US")}</p>
     <button class="btn">구입하기</button>
     <a href="${ipad.url}" class="link">더 알아보기</a>
   `;
 
   itemsEl.append(itemEl);
 });
+
+const navigationsEl = document.querySelector("footer .navigations");
+navigations.forEach((nav) => {
+  const mapEl = document.createElement("div");
+  mapEl.classList.add("map");
+
+  let mapList = "";
+  nav.maps.forEach((map) => {
+    mapList += /* html*/ `
+    <li>
+      <a href="${map.url}">${map.name}</a>
+    </li>
+    `;
+  });
+
+  mapEl.innerHTML = /* html */ `
+    <h3>
+      <span class="text">${nav.title}</span>
+    </h3>
+    <ul>
+      ${mapList}
+    </ul>
+  `;
+
+  navigationsEl.append(mapEl);
+});
+
+const thisYear = document.querySelector("span.this-year");
+thisYear.textContent = new Date().getFullYear();

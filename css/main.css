@@ -36,6 +36,11 @@ img {
 p {
   line-height: 1.6;
 }
+sup {
+  margin-right: 6px;
+  font-size: 0.7em;
+  vertical-align: top;
+}
 
 /* Inner */
 .inner {
@@ -217,7 +222,7 @@ a.link::after {
 }
 
 /* Whitebox */
-.whitebox{
+.whitebox {
   max-width: 1386px;
   margin: 0 auto;
   padding: 100px 30px;
@@ -225,22 +230,22 @@ a.link::after {
   box-sizing: border-box;
   background-color: var(--color-white);
 }
-.whitebox.whitebox--transparent{
+.whitebox.whitebox--transparent {
   background-color: transparent;
 }
-.whitebox .icon{
+.whitebox .icon {
   margin-bottom: 20px;
 }
-.whitebox h1{
+.whitebox h1 {
   font-size: 50px;
   font-weight: 600;
   line-height: 1.3;
 }
-.whitebox p{
+.whitebox p {
   margin-top: 20px;
   font-size: 19px;
 }
-.whitebox a.link{
+.whitebox a.link {
   display: block;
   margin-top: 26px;
 }
@@ -510,6 +515,11 @@ nav .menu li.active a {
 }
 nav .menu li.active:hover a {
   color: var(--color-font);
+}
+
+/* Main */
+main {
+  overflow-x: hidden;
 }
 
 /* Hero */
@@ -821,7 +831,7 @@ nav .menu li.active:hover a {
   width: 530px;
   height: 400px;
   margin: 0 auto;
-  background-image: url('../images/ipados_headline.png');
+  background-image: url("../images/ipados_headline.png");
 }
 .ipados .infos {
   margin-top: 44px;
@@ -841,7 +851,7 @@ nav .menu li.active:hover a {
 .ipados .figure-splite-view figcaption {
   width: 163px;
   height: 53px;
-  background-image: url('../images/ipados_split_view_caption.png');
+  background-image: url("../images/ipados_split_view_caption.png");
   transform: translate(200px, -38px);
 }
 .ipados .figure-widgets figure {
@@ -850,7 +860,7 @@ nav .menu li.active:hover a {
 .ipados .figure-widgets figcaption {
   width: 161px;
   height: 46px;
-  background-image: url('../images/ipados_widgets_caption.png');
+  background-image: url("../images/ipados_widgets_caption.png");
   transform: translate(257px, 497px);
 }
 .ipados .figure-quick-note figure {
@@ -859,18 +869,18 @@ nav .menu li.active:hover a {
 .ipados .figure-quick-note figcaption {
   width: 82px;
   height: 97px;
-  background-image: url('../images/ipados_quick_note_caption.png');
+  background-image: url("../images/ipados_quick_note_caption.png");
   transform: translate(511px, 470px);
 }
 
 /* Apps */
-.apps{
+.apps {
   margin-top: 368px;
 }
 .apps h1 {
   width: 500px;
   height: 264px;
-  background-image: url('../images/apps_headline.png');
+  background-image: url("../images/apps_headline.png");
   transform: translate(17px, 0);
 }
 .apps .infos {
@@ -891,7 +901,7 @@ nav .menu li.active:hover a {
 .apps .figure-masterclass figcaption {
   width: 100px;
   height: 25px;
-  background-image: url('../images/apps_masterclass_caption.png');
+  background-image: url("../images/apps_masterclass_caption.png");
   transform: translate(26px, 690px);
 }
 .apps .figure-adobe figure {
@@ -900,7 +910,7 @@ nav .menu li.active:hover a {
 .apps .figure-adobe figcaption {
   width: 105px;
   height: 24px;
-  background-image: url('../images/apps_adobe_caption.png');
+  background-image: url("../images/apps_adobe_caption.png");
   transform: translate(544px, 514px);
 }
 .apps .figure-fantasian figure {
@@ -909,7 +919,7 @@ nav .menu li.active:hover a {
 .apps .figure-fantasian figcaption {
   width: 74px;
   height: 22px;
-  background-image: url('../images/apps_fantasian_caption.png');
+  background-image: url("../images/apps_fantasian_caption.png");
   transform: translate(24px, 483px);
 }
 .apps .figure-books figure {
@@ -918,7 +928,7 @@ nav .menu li.active:hover a {
 .apps .figure-books figcaption {
   width: 50px;
   height: 27px;
-  background-image: url('../images/apps_books_caption.png');
+  background-image: url("../images/apps_books_caption.png");
   transform: translate(397px, 707px);
 }
 .apps .figure-goodnotes figure {
@@ -927,7 +937,7 @@ nav .menu li.active:hover a {
 .apps .figure-goodnotes figcaption {
   width: 99px;
   height: 26px;
-  background-image: url('../images/apps_goodnotes_caption.png');
+  background-image: url("../images/apps_goodnotes_caption.png");
   transform: translate(24px, 690px);
 }
 
@@ -939,7 +949,7 @@ nav .menu li.active:hover a {
   width: 482px;
   height: 237px;
   margin-left: auto;
-  background-image: url('../images/privacy_headline.png');
+  background-image: url("../images/privacy_headline.png");
   position: relative;
   z-index: 1;
   transform: translate(57px, 0);
@@ -956,25 +966,25 @@ nav .menu li.active:hover a {
 .privacy figcaption .caption-apple-id {
   width: 170px;
   height: 26px;
-  background-image: url('../images/privacy_caption_apple_id.png');
+  background-image: url("../images/privacy_caption_apple_id.png");
   transform: translate(195px, -13px);
 }
 .privacy figcaption .caption-touch-id {
   width: 150px;
   height: 31px;
-  background-image: url('../images/privacy_caption_touch_id.png');
+  background-image: url("../images/privacy_caption_touch_id.png");
   transform: translate(533px, 485px);
 }
 
 /* Accessibility */
-.accessibility{
+.accessibility {
   margin-top: 266px;
   margin-bottom: 170px;
 }
 .accessibility h1 {
   width: 384px;
   height: 270px;
-  background-image: url('../images/accessibility_headline.png');
+  background-image: url("../images/accessibility_headline.png");
 }
 .accessibility .infos {
   margin-top: 20xp;
@@ -984,11 +994,11 @@ nav .menu li.active:hover a {
 }
 
 /* AR */
-.ar{
+.ar {
   background-color: var(--color-section);
   padding: 20px 20px 0;
 }
-.ar .whitebox{
+.ar .whitebox {
   padding-bottom: 0;
 }
 .ar .inner {
@@ -1009,7 +1019,7 @@ nav .menu li.active:hover a {
 .enviroment .icon {
   margin-left: auto;
   margin-right: auto;
-  background-image: url('../images/environment_icon.png');
+  background-image: url("../images/environment_icon.png");
 }
 .enviroment h1 {
   color: #03a10e;
@@ -1033,7 +1043,7 @@ nav .menu li.active:hover a {
 }
 
 /* Trade */
-.trade{
+.trade {
   padding: 20px 20px 0;
   background-color: var(--color-section);
   text-align: center;
@@ -1095,8 +1105,161 @@ nav .menu li.active:hover a {
   font-size: 14px;
 }
 
+/* Footer */
+footer {
+  background-color: var(--color-section);
+}
 
+/* Footer / Buy-info */
+footer .buy-info {
+  padding: 76px 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+footer .buy-info .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 10px;
+}
+footer .buy-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .buy-info p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+footer .buy-info a.link {
+  font-size: 14px;
+}
 
+/* Footer / Warning */
+footer .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+footer .warning ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+footer .warning li {
+  margin-bottom: 10px;
+  font-size: 11px;
+  lighting-color: 1.5;
+  color: var(--color-font-darkgrary);
+}
+
+/* Footer / Breadcrumbs */
+footer .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+footer .breadcrumbs a {
+  font-size: 12px;
+  color: var(--color-font-darkgrary);
+  position: relative;
+}
+footer .breadcrumbs a.apple-logo {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/path_apple.svg");
+}
+footer .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+footer .breadcrumbs a::after {
+  content: "";
+  width: 8px;
+  height: 18px;
+  background-image: url("../images/path_div.svg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -18px;
+  margin: auto;
+}
+footer .breadcrumbs a:last-child::after {
+  display: none;
+}
+
+/* Footer / Navigations */
+footer .navigations {
+  height: 344px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+footer .navigations .map {
+  margin-top: 24px;
+}
+footer .navigations .map:nth-child(6) {
+  padding-bottom: 100px;
+}
+footer .navigations .map h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+footer .navigations .map li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+footer .navigations .map li a {
+  color: var(--color-font-darkgrary);
+}
+footer .navigations .map li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer / How To Shop */
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgrary);
+}
+footer .how-to-shop a {
+  color: var(--color-link);
+}
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+
+footer .legal {
+  margin-top: 10px;
+  padding: 10px 0 40px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+  color: var(--color-font-darkgrary);
+}
+footer .legal ul {
+  flex-grow: 1;
+  display: flex;
+  gap: 21px;
+}
+footer .legal ul li {
+  position: relative;
+}
+footer .legal ul li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+footer .legal ul li:last-child::after {
+  display: none;
+}
+footer .legal ul li a:hover {
+  text-decoration: underline;
+}
 
 @keyframes sprite-icon {
   /* 1~10 */
